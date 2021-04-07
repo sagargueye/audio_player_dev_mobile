@@ -1,0 +1,5 @@
+package fr.cpe.gr6.audioplayer;
+
+public interface MyListener{
+    void onDoneSomething();
+}

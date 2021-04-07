@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity_lastfm_artist">
+    <data/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="85"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/genres"
+                app:backgroundTint="#009688"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="Genres" />
+
+            <Button
+                android:id="@+id/artistes"
+                app:backgroundTint="#01655C"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="Artistes" />
+
+            <Button
+                android:id="@+id/albums"
+                app:backgroundTint="#009688"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="Albums" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="95"
+            android:background="#1AB8A9"
+            android:text="Cliquer sur les items de la liste pour être rediriger"
+            android:textAlignment="center" />
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="fr.cpe.gr6.audioplayer.AudioFileListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="30" />
+
+        <Button
+            android:id="@+id/returnbutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:text="@string/retour"
+            app:backgroundTint="#009688" />
+
+
+
+
+    </LinearLayout>
+</layout>

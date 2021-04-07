@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Audio Player</string>
+    <string name="play">play</string>
+    <string name="arriere"><![CDATA[<]]></string>
+    <string name="avance"><![CDATA[>]]></string>
+    <string name="textview">TextView</string>
+    <string name="passer_lastfm">Passer à lastFm</string>
+    <string name="retour">Retour</string>
+</resources>
